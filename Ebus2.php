@@ -1,6 +1,7 @@
 <?php
 session_start();
 $fullNameValue = "";
+$totalValue2 ="";
 /*
  * create a session variable for the mobile number
  */
@@ -22,6 +23,7 @@ $_SESSION['txtTotal'] = $totalValue;
     <body background="backpic1.jpg">
         <div class="form">
             <form name ="Details" method="post" action="Ebus3.php">
+                <img src="logo.png" style="float:left" width="300" height="200">
                 <center>
                     <table cellspacing="10">
                         <tr>
@@ -38,7 +40,7 @@ $_SESSION['txtTotal'] = $totalValue;
                         </tr>
                         <tr>
                             <td><h3>Pin</h3></td>
-                            <td><input type="text" id="txtPassword" name="txtPassword" value=""/></td> 
+                            <td><input type="text"  max="4" id="txtPassword" name="txtPassword" value=""/></td> 
                         </tr>
                         <tr>
                             <td><input type="hidden" id="txtTotal" name="txtTotal" value="<?php echo $totalValue;?>"/></td>
